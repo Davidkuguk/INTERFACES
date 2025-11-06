@@ -7,8 +7,8 @@
     <title>Liga Deportiva</title>
 
     <!-- Incersion de Bootstrap  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
 
     <!-- mis estilos -->
     <link rel="stylesheet" href="CSS/styles.css">
@@ -16,71 +16,50 @@
 
 <body class="d-flex flex-column min-vh-100">
 
-    <!-- menu principal de la navegacion -->
-    <header aria-label="Menu Principal"
-        class="navbar navbar-expand-lg mx-3 my-4 d-flex justify-content-between align-items-center ">
+    <!-- barra de navegacion -->
+    <header aria-label="Menu Principal" class="pe-md-3">
+        <!-- determinamos cuando se expande la barra -->
+        <nav class="navbar navbar-expand-lg container-fluid ps-3 pt-1 pb-1 mt-2 mt-md-3 ms-md-2 me-md-2 ">
 
-        <h1 class="navbar-brand fw-bold m-0 pl-5">LIGA DEPORTIVA</h1>
+            <a href="index.html" class="navbar-brand fw-bold">LIGA DEPORTIVA</a>
 
-        <nav>
-            <ul class="list-unstyled d-flex m-auto pr-5">
-                <li><a href="pages/equipos.html" class="text-reset text-decoration-none">Equipos</a></li>
-                <li><a href="pages/resultados.html" class="text-reset text-decoration-none">Resultados</a></li>
-                <li><a href=" pages/clasificaciones.html" class="text-reset text-decoration-none">Clasificaciones</a>
-                </li>
-                <li><a href=" pages/jugadores.html" class="text-reset text-decoration-none">Jugadores</a></li>
-                <li><a href="pages/arbitros.html" class="text-reset text-decoration-none">Arbitros</a></li>
-                <li><a href="pages/contacto.html" class="text-reset text-decoration-none">Contacto</a></li>
-            </ul>
+            <!-- boton invicible -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- lista de enlaces -->
+            <div class="collapse navbar-collapse me-3" id="navbar-toggler">
+
+                <ul class="navbar-nav ms-auto d-flex ">
+                    <li class="nav-item"><a href="pages/equipos.html" class="nav-link text-reset">Equipos</a>
+                    </li>
+                    <li class="nav-item"><a href="pages/resultados.html" class="nav-link text-reset">Resultados</a>
+                    </li>
+                    <li class="nav-item"><a href="pages/clasificaciones.html"
+                            class="nav-link text-reset">Clasificaciones</a></li>
+                    <li class="nav-item"><a href="pages/jugadores.html" class="nav-link text-reset">Jugadores</a>
+                    </li>
+                    <li class="nav-item"><a href="pages/arbitros.html" class="nav-link text-reset">Árbitros</a>
+                    </li>
+                    <li class="nav-item"><a href="pages/contacto.html" class="nav-link text-reset">Contacto</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+
 
         </nav>
-
     </header>
 
-    <!-- <main>
-        <section aria-label="Resumen Competiciones">
-            <h3>Resumen</h3>
 
-            <table border="1">
-                <thead>
-                    <tr>
-                        <th>Partido</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Dragones FC 3 - 1 Rayo del Sur</td>
-                        <td>info</td>
-                    </tr>
-                    <tr>
-                        <td>Atlético Boreal 0 - 0 Tigres del Alba</td>
-                        <td>info</td>
-                    </tr>
-                    <tr>
-                        <td>Lobos de Acero 1 - 2 Fénix Unido</td>
-                        <td>info</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-    </main> -->
-
-    <!--carrusel de noticias que tiene que abrir un modal  -->
-    <!-- <aside aria-label="Noticias">
-        <h2>Noticias de la Liga</h2>
-
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt molestiae optio perferendis, officia rem
-            maiores omnis iure cum sapiente illum quod deserunt facere quas quo! Non, odio! Fugiat, animi nulla.</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis adipisci quo consectetur ut accusantium id
-            repellat saepe dolore. Iste sequi doloribus nesciunt id perspiciatis, a ex eveniet repudiandae officia amet?
-        </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum labore doloribus molestiae, veritatis, quas
-            deserunt distinctio, eveniet expedita corporis quia reiciendis porro eum ut fugiat impedit voluptatibus.
-            Illo, quibusdam quisquam?</p>
-    </aside> -->
 
     <!--pie de pagina con informacion de redes sociales, correo textos legales  -->
-    <footer class="d-flex justify-content-around mt-auto pt-2">
+    <footer
+        class="d-flex flex-column flex-md-row justify-content-sm-center text-center text-md-start justify-content-md-around mt-auto pt-3">
 
         <section aria-label="Redes Sociales">
             <h5>Nuestras Redes</h5>

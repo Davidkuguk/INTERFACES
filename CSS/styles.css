@@ -4,6 +4,21 @@ body {
   width: 100%;
 }
 
+body {
+  background: linear-gradient(120deg, #2140a5, #6f00b3, #ff5f3d);
+  min-height: 100vh;
+}
+
+header nav ul li {
+  color: #fcd34d !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 footer {
   background-color: rgb(38, 18, 90);
 }
@@ -16,6 +31,11 @@ h5,
 a {
   color: #fcd34d;
   text-decoration: none;
+}
+
+a:hover {
+  color: #ffffff !important;
+  transition: 0.3s;
 }
 
 footer a:hover {
@@ -39,28 +59,10 @@ a:focus {
   gap: 1rem;
 }
 
-header nav ul li {
-  color: #fcd34d !important;
-  font-weight: 600;
-  font-size: 1.1rem;
-}
-
-header nav ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  gap: 3rem;
-}
-
 .navbar-brand {
   color: #ffffff !important;
   font-size: 2rem !important;
   font-family: sans-serif !important;
   font-weight: 1000;
   font-style: oblique !important;
-}
-
-body {
-  background: linear-gradient(120deg, #2140a5, #6f00b3, #ff5f3d);
-  min-height: 100vh;
 }
