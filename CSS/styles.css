@@ -23,8 +23,65 @@ header nav ul li {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-footer {
-  background-color: rgb(38, 18, 90);
+.navbar {
+  background-color: rgb(38, 18, 90) !important;
+  border-radius: 3dvh;
+  -webkit-border-radius: 3dvh;
+  -moz-border-radius: 3dvh;
+  -ms-border-radius: 3dvh;
+  -o-border-radius: 3dvh;
+  gap: 1rem;
+}
+
+.navbar-brand {
+  color: #ffffff !important;
+  font-size: 2rem !important;
+  font-family: sans-serif !important;
+  font-weight: 1000;
+  font-style: italic !important;
+}
+
+.noticias {
+  border-radius: 5vh;
+  -webkit-border-radius: 5vh;
+  -moz-border-radius: 5vh;
+  -ms-border-radius: 5vh;
+  -o-border-radius: 5vh;
+}
+
+.carousel-item {
+  min-height: 20vh !important;
+  padding-top: 2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+.imagen {
+  background-image: url("../public/img/deportes.png");
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 4vh;
+  -webkit-border-radius: 4vh;
+  -moz-border-radius: 4vh;
+  -ms-border-radius: 4vh;
+  -o-border-radius: 4vh;
+}
+
+.fondo__rosa {
+  background-color: #e91e63;
+}
+
+.fondo__turquesa {
+  background-color: #2b1465;
+}
+
+.color__amarillo {
+  color: #fcd34d;
+}
+
+.color__turquesa {
+  color: #2b1465;
 }
 
 h5,
@@ -42,31 +99,27 @@ a:hover {
   transition: 0.3s;
 }
 
-footer a:hover {
-  color: #ffffff;
-  transition: 0.3s;
-}
-
 a:hover,
 a:focus {
   text-decoration: none;
   color: #fcd34d;
 }
 
-.navbar {
-  background-color: rgb(38, 18, 90) !important;
-  border-radius: 3dvh;
-  -webkit-border-radius: 3dvh;
-  -moz-border-radius: 3dvh;
-  -ms-border-radius: 3dvh;
-  -o-border-radius: 3dvh;
-  gap: 1rem;
+footer {
+  background-color: rgb(38, 18, 90);
 }
 
-.navbar-brand {
-  color: #ffffff !important;
-  font-size: 2rem !important;
-  font-family: sans-serif !important;
-  font-weight: 1000;
-  font-style: oblique !important;
+footer a:hover {
+  color: #ffffff;
+  transition: 0.3s;
+}
+
+.fondo__amarilloYB {
+  font-weight: 800;
+  background-color: #fcd34d;
+  color: #ffffff;
+}
+
+.tamano__fuente {
+  font-size: 1.2rem;
 }

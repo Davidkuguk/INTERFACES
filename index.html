@@ -56,60 +56,97 @@
     </header>
 
     <main class="mt-md-5 mt-3 mx-md-4 mx-2">
-        <div class="row">
-            <div class="col noticias">
-                <h1 class="noticias__titulo fw-bolder">Ultimas Noticias</h1>
-                <div id="carouselExampleCaptions" class="carousel slide">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
+
+        <div class="container my-5">
+            <div class="row g-5">
+
+                <section class="col-12 col-lg-4">
+                    <h2 class="color__amarillo fw-bold mb-3">Ultimas Noticias</h2>
+
+                    <div class="fondo__rosa p-4 rounded-3 mb-3"">
+                        <h3 class=" fw-bold text-white mb-2">Previas al Partido</h3>
+                        <p class="text-white-50 tamano__fuente mb-0">Puede haber errores durante la retransmicion,
+                            Disculpen las
+                            molestias</p>
                     </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>First slide label</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                            <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                        </div>
+
+                    <div class="fondo__turquesa p-3 rounded-3 mb-4">
+                        <p class="text-white mb-0 tamano__fuente">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit</p>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-            </div>
-            <div class="col">
-                <h1>hola</h1>
-            </div>
-            <div class="col">
-                <h1>hola</h1>
+
+                    <a class="text-center btn btn-danger fw-bold px-4 py-2">VER EN
+                        VIVO</a>
+                </section>
+
+                <section class="col-12 col-lg-4">
+                    <h3 class="text-center color__amarillo fw-bold">Todos Los Equipos</h3>
+                    <div class="imagen rounded-5 overflow-hidden w-100 d-flex justify-content-center align-items-end"
+                        style="height:550px;">
+
+                        <button class="btn fondo__turquesa text-white fw-bold px-4 py-2 mb-3">VER TODO</button>
+                    </div>
+                </section>
+
+                <section class="col-12 col-lg-4">
+
+                    <!-- carrucel -->
+                    <div id="colorCarousel" class="carousel slide">
+
+                        <h2 class="color__amarillo fw-bolder mb-3 ">Noticias Destacadas</h2>
+
+                        <div class="carousel-inner fondo__turquesa text-white rounded-4 p-4  w-100">
+                            <div class="carousel-item active text-center">
+                                <a href="pages/equipos.html" target="_blank" class="text-reset text-decoration-none">
+                                    <h2>Sección A</h2>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                            <div class="carousel-item text-center fondo__turquesa text-white">
+                                <a href="pages/equipos.html" target="_blank" class="text-reset text-decoration-none">
+                                    <h2>Sección B</h2>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                            <div class="carousel-item text-center fondo__turquesa text-white">
+                                <a href="pages/equipos.html" target="_blank" class="text-reset text-decoration-none">
+                                    <h2>Sección C</h2>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+                            </div>
+                        </div>
+
+                        <button class="carousel-control-prev" type="button" data-bs-target="#colorCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#colorCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+
+                    </div>
+
+
+                    <div class="noticias__destacadas text-center fondo__rosa text-white  rounded-4 mt-2 mb-1 p-3 ">
+                        <h3>Anuncios</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iusto quasi natus vero
+                        voluptatum
+                        modi recusandae blanditiis minus nobis aspernatur suscipit ad, doloremque possimus
+                        consequuntur
+                        accusamus.
+                    </div>
+
+                    <div class="mt-2 p-2 rounded-4 text-center fondo__amarilloYB text-white">
+                        <a href="pages/contacto.html" class="color__turquesa">¿Quieres inscribirte?</a>
+                    </div>
+
+                </section>
+
             </div>
         </div>
+
+
     </main>
 
 
