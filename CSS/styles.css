@@ -15,8 +15,18 @@ header nav ul li {
   font-size: 1.1rem;
 }
 
+main {
+  min-height: 75vh !important;
+}
+
 .noticias__titulo {
   color: #fcd34d;
+}
+
+.prosto-one-regular {
+  font-family: "Prosto One", sans-serif !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
 }
 
 .navbar-toggler-icon {
@@ -36,7 +46,6 @@ header nav ul li {
 .navbar-brand {
   color: #ffffff !important;
   font-size: 2rem !important;
-  font-family: sans-serif !important;
   font-weight: 1000;
   font-style: italic !important;
 }
