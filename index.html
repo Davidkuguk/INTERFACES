@@ -4,202 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga Deportiva</title>
+    <title>Columnas alineadas horizontalmente</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Incersion de Bootstrap  -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-
-    <!-- mis estilos -->
-    <link rel="stylesheet" href="CSS/styles.css">
-
-    <!-- fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prosto+One&display=swap" rel="stylesheet">
 </head>
 
 <body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-light navbar-expand-md">
+        <div class="container">
+            <a href="#" class="navbar-brand fw-bolder fs-2 p-0">Liga Deportiva</a>
 
-    <!-- barra de navegacion -->
-    <header aria-label="Menu Principal" class="pe-md-3">
-        <!-- determinamos cuando se expande la barra -->
-        <nav class="navbar navbar-expand-lg container-fluid   ps-3 pt-1 pb-1 mt-2 mt-md-3 ms-md-2 me-md-2 ">
-
-            <a href="index.html" class="navbar-brand me-0 prosto-one-regular">LIGA DEPORTIVA</a>
-
-            <!-- boton invicible -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-                aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+            <!-- boton menu movil -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                aria-controls="menu" aria-expanded="false" aria-label="Mostrar/Ocultar Menu">
                 <span class="navbar-toggler-icon"></span>
+
+
             </button>
-
-            <!-- lista de enlaces -->
-            <div class="collapse navbar-collapse me-3" id="navbar-toggler">
-
-                <ul class="navbar-nav ms-auto d-flex ">
-                    <li class="nav-item"><a href="pages/equipos.html" class="nav-link text-reset">Equipos</a>
+            <div class="collapse navbar-collapse fs-5" id="menu">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
+                    <li class="nav-item">
+                        <a href="pages/equipos.html" class="nav-link text-reset">Equipos</a>
                     </li>
-                    <li class="nav-item"><a href="pages/resultados.html" class="nav-link text-reset">Resultados</a>
+                    <li class="nav-item">
+                        <a href="pages/resultados.html" class="nav-link text-reset">Resultados</a>
                     </li>
-                    <li class="nav-item"><a href="pages/clasificaciones.html"
-                            class="nav-link text-reset">Clasificaciones</a></li>
-                    <li class="nav-item"><a href="pages/jugadores.html" class="nav-link text-reset">Jugadores</a>
+                    <li class="nav-item">
+                        <a href="pages/clasificaciones.html" class="nav-link text-reset">Clasificaciones</a>
                     </li>
-                    <li class="nav-item"><a href="pages/arbitros.html" class="nav-link text-reset">Árbitros</a>
+                    <li class="nav-item">
+                        <a href="pages/jugadores.html" class="nav-link text-reset">Jugadores</a>
                     </li>
-                    <li class="nav-item"><a href="pages/contacto.html" class="nav-link text-reset">Contacto</a>
+                    <li class="nav-item">
+                        <a href="pages/arbitros.html" class="nav-link text-reset">Árbitros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="pages/contacto.html" class="nav-link text-reset">Contacto</a>
                     </li>
                 </ul>
-
             </div>
+        </div>
+    </nav>
 
 
-
-
-        </nav>
-    </header>
-
-    <main class="mt-md-5 mt-3 mx-md-4 mx-2">
-
-        <div class="container my-5">
-            <div class="row g-5">
-
-                <section class="col-12 col-lg-4">
-                    <h2 class="text-center text-lg-start color__amarillo fw-bold mb-3">Ultimas Noticias</h2>
-
-                    <div class="fondo__rosa p-4 rounded-3 mb-3"">
-                        <h3 class=" fw-bold text-white mb-2">Previas al Partido</h3>
-                        <p class="text-white-50 tamano__fuente mb-0">Puede haber errores durante la retransmicion,
-                            Disculpen las
-                            molestias</p>
-                    </div>
-
-                    <div class="fondo__turquesa p-3 rounded-3 mb-4">
-                        <p class="text-white mb-0 tamano__fuente">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit</p>
-                    </div>
-
-                    <div class="text-center ">
-                        <a class="text-center btn btn-danger fw-bold px-4 py-2">VER EN
-                            VIVO</a>
-                    </div>
-
-                </section>
-
-                <section class="col-12 col-lg-4">
-                    <h3 class="text-center text-lg-start color__amarillo fw-bold">Todos Los Equipos</h3>
-                    <div class="imagen rounded-5 overflow-hidden w-100 d-flex justify-content-center align-items-end"
-                        style="height:550px;">
-
-                        <button class="btn fondo__turquesa text-white fw-bold mb-4 mb-md-5 mb-lg-3 px-4 py-2 mb-3">VER
-                            TODO</button>
-                    </div>
-                </section>
-
-                <section class="col-12 col-lg-4">
-
-                    <!-- carrucel -->
-                    <div id="colorCarousel" class="carousel slide">
-
-                        <h2 class="text-center text-lg-start color__amarillo fw-bolder mb-3 ">Noticias Destacadas</h2>
-
-                        <div class="carousel-inner fondo__turquesa text-white rounded-4 p-4  w-100">
-                            <div class="carousel-item active text-center">
-                                <a href="pages/equipos.html" target="_blank" class="text-reset text-decoration-none">
-                                    <h2>Sección A</h2>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                            </div>
-                            <div class="carousel-item text-center fondo__turquesa text-white">
-                                <a href="pages/equipos.html" target="_blank" class="text-reset text-decoration-none">
-                                    <h2>Sección B</h2>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                            </div>
-                            <div class="carousel-item text-center fondo__turquesa text-white">
-                                <a href="pages/equipos.html" target="_blank" class="text-reset text-decoration-none">
-                                    <h2>Sección C</h2>
-                                </a>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+    <main class="container flex-grow-1 mt-4">
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <div class="row-cols-3">
+                    <div class="col-12">
+                        <div class="card text-start fondoFuccia ">
+                            <div class="card-body">
+                                <h4 class="card-title">Noticia Top</h4>
+                                <p class="card-text colorAmarillo">Los Hombres de acero ganan el torneo!</p>
                             </div>
                         </div>
 
-                        <button class="carousel-control-prev" type="button" data-bs-target="#colorCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#colorCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </button>
+                    </div>
+                    <div class="col-12">aqui</div>
+
+
+
+                    <div class="col-12">
+                        <a href="#">
+                            <div class="card text-start bg-danger">
+                                <div class="card-body ">
+                                    <h4 class="card-title">Ver en vivo</h4>
+                                    <p class="card-text">Observa los partidos en linea!</p>
+                                </div>
+                            </div>
+                        </a>
 
                     </div>
+                </div>
+            </div>
 
-
-                    <div class="noticias__destacadas text-center fondo__rosa text-white  rounded-4 mt-2 mb-1 p-3 ">
-                        <h3>Anuncios</h3>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus iusto quasi natus vero
-                        voluptatum
-                        modi recusandae blanditiis minus nobis aspernatur suscipit ad, doloremque possimus
-                        consequuntur
-                        accusamus.
+            <div class="col-12 col-md-4">
+                <div class="position-relative">
+                    <img class="rounded-3 img-fluid" src="public/img/deportes.png" alt="">
+                    <div class="position-absolute bottom-0 start-0 w-100 text-center mb-2">
+                        <a class="btn fondoMorado text-white f-oswald fs-6 mb-2" href="">Ver Todo</a>
                     </div>
+                </div>
+            </div>
 
-                    <div class="mt-2 p-2 rounded-4 text-center fondo__amarilloYB text-white">
-                        <a href="pages/contacto.html" class="color__turquesa">¿Quieres inscribirte?</a>
+
+
+            <div class="col-12 col-md-4 mt-3 mt-md-0">
+                <div class="row-cols-3">
+                    <div class="col-12">
+                        <div class="card text-start fondoAmarillo">
+                            <div class="card-body ">
+                                <h4 class="card-title colorMorado">esto pasa</h4>
+                                <p class="card-text">Body</p>
+                            </div>
+                        </div>
+
                     </div>
-
-                </section>
-
+                    <div class="col"></div>
+                    <div class="col"></div>
+                </div>
             </div>
         </div>
-
-
     </main>
 
 
+    <!-- FOOTER -->
+    <div class="container-fluid">
+        <footer class="row mt-3">
+            <section class="col-12 col-md-6 text-center mt-3" aria-label="Redes Sociales">
+                <h5>Nuestras Redes</h5>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.instagram.com/iesmaestre/?hl=es" target="_blank"
+                                rel="noopener noreferrer">Instagram</a></li>
+                        <li><a href="https://www.facebook.com/p/IES-Maestre-100063601780596/?locale=es_ES"
+                                target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                        <li><a href="https://www.linkedin.com/company/ies-maestredecalatrava/?originalSubdomain=es"
+                                target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </li>
+                        <li><a href="https://x.com/iesmaestre?lang=es" target="_blank" rel="noopener noreferrer">X</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
 
-    <!--pie de pagina con informacion de redes sociales, correo textos legales  -->
-    <footer
-        class="d-flex flex-column flex-md-row justify-content-sm-center text-center text-md-start justify-content-md-around mt-auto pt-3">
+            <!-- Textos fundamentales -->
+            <section class=" col-12 col-md-6 text-center mt-3" aria-label="Textos Legales">
 
-        <section aria-label="Redes Sociales">
-            <h5>Nuestras Redes</h5>
-            <nav>
-                <ul class="list-unstyled">
-                    <li><a href="https://www.instagram.com/iesmaestre/?hl=es" target="_blank"
-                            rel="noopener noreferrer">Instagram</a></li>
-                    <li><a href="https://www.facebook.com/p/IES-Maestre-100063601780596/?locale=es_ES" target="_blank"
-                            rel="noopener noreferrer">Facebook</a></li>
-                    <li><a href="https://www.linkedin.com/company/ies-maestredecalatrava/?originalSubdomain=es"
-                            target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </li>
-                    <li><a href="https://x.com/iesmaestre?lang=es" target="_blank" rel="noopener noreferrer">X</a></li>
-                </ul>
-            </nav>
+                <h5>Legales</h5>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li><a href="">Aviso Legal</a></li>
+                        <li><a href="">Politica de Privacidad</a></li>
+                        <li><a href="">Politica de Cookies</a></li>
+                    </ul>
+                </nav>
 
-        </section>
+            </section>
 
-        <!-- Textos fundamentales -->
-        <section aria-label="Textos Legales">
+            <div class="col-12">
+                <p class="copy text-center">© 2025 David Kuguk</p>
+            </div>
 
-            <h5>Legales</h5>
-            <nav>
-                <ul class="list-unstyled">
-                    <li><a href="">Aviso Legal</a></li>
-                    <li><a href="">Politica de Privacidad</a></li>
-                    <li><a href="">Politica de Cookies</a></li>
-                </ul>
-            </nav>
+        </footer>
+    </div>
 
-        </section>
 
-        <p class="copy">© 2025 David Kuguk</p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 

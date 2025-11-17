@@ -1,134 +1,85 @@
-html,
-body {
-  overflow-x: hidden;
-  width: 100%;
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+:root {
+  --fondo-gradiente: linear-gradient(120deg, #2140a5, #6f00b3, #ff5f3d);
+  --color-morado: rgb(38, 18, 90);
+  --fuente-titulo: "Bebas Neue", sans-serif;
+  --fuente-secundaria: "Oswald", sans-serif;
+  --color-primario: #fff;
+  --color-secundario: #fcd34d;
+  --color-fuccia: #e91e63;
 }
 
 body {
-  background: linear-gradient(120deg, #2140a5, #6f00b3, #ff5f3d);
-  min-height: 100vh;
+  background: var(--fondo-gradiente);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-header nav ul li {
-  color: #fcd34d !important;
-  font-weight: 600;
-  font-size: 1.1rem;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-primario);
+  font-family: var(--fuente-titulo);
 }
 
-main {
-  min-height: 75vh !important;
+p {
+  font-family: var(--fuente-secundaria);
 }
 
-.noticias__titulo {
-  color: #fcd34d;
+.f-oswald {
+  font-family: var(--fuente-secundaria);
 }
 
-.prosto-one-regular {
-  font-family: "Prosto One", sans-serif !important;
-  font-weight: 400 !important;
-  font-style: normal !important;
-}
-
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-}
-
-.navbar {
-  background-color: rgb(38, 18, 90) !important;
-  border-radius: 3dvh;
-  -webkit-border-radius: 3dvh;
-  -moz-border-radius: 3dvh;
-  -ms-border-radius: 3dvh;
-  -o-border-radius: 3dvh;
-  gap: 1rem;
+nav,
+footer {
+  background: var(--color-morado);
+  font-family: var(--fuente-secundaria);
+  color: var(--color-primario);
 }
 
 .navbar-brand {
-  color: #ffffff !important;
-  font-size: 2rem !important;
-  font-weight: 1000;
-  font-style: italic !important;
-}
-
-.noticias {
-  border-radius: 5vh;
-  -webkit-border-radius: 5vh;
-  -moz-border-radius: 5vh;
-  -ms-border-radius: 5vh;
-  -o-border-radius: 5vh;
-}
-
-.carousel-item {
-  min-height: 20vh !important;
-  padding-top: 2vh;
-  padding-left: 1vh;
-  padding-right: 1vh;
-}
-
-.imagen {
-  background-image: url("../public/img/deportes.png");
-  background-position: center center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 4vh;
-  -webkit-border-radius: 4vh;
-  -moz-border-radius: 4vh;
-  -ms-border-radius: 4vh;
-  -o-border-radius: 4vh;
-}
-
-.fondo__rosa {
-  background-color: #e91e63;
-}
-
-.fondo__turquesa {
-  background-color: #2b1465;
-}
-
-.color__amarillo {
-  color: #fcd34d;
-}
-
-.color__turquesa {
-  color: #2b1465;
-}
-
-h5,
-.copy {
-  color: #ffffff;
+  font-family: var(--fuente-titulo);
+  color: var(--color-primario) !important;
 }
 
 a {
-  color: #fcd34d;
+  color: var(--color-secundario);
   text-decoration: none;
 }
 
-a:hover {
-  color: #ffffff !important;
-  transition: 0.3s;
+nav ul li a:hover {
+  color: white;
 }
 
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: #fcd34d;
+nav .navbar-brand {
+  font-family: var(--fuente-titulo);
+}
+
+.fondoAmarillo {
+  background: var(--color-secundario);
+}
+
+.colorAmarillo {
+  color: var(--color-secundario);
+}
+
+.fondoFuccia {
+  background: var(--color-fuccia);
+}
+
+.fondoMorado {
+  background: var(--color-morado);
+}
+
+.colorMorado {
+  color: var(--color-morado);
 }
 
 footer {
-  background-color: rgb(38, 18, 90);
-}
-
-footer a:hover {
-  color: #ffffff;
-  transition: 0.3s;
-}
-
-.fondo__amarilloYB {
-  font-weight: 800;
-  background-color: #fcd34d;
-  color: #ffffff;
-}
-
-.tamano__fuente {
-  font-size: 1.2rem;
+  margin-top: auto;
 }
