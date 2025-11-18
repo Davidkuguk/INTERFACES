@@ -64,6 +64,17 @@ nav ul li a:hover {
   color: white;
 }
 
+.btnHover:hover {
+  background: var(--color-secundario);
+  color: var(--color-morado) !important;
+  transition: 1s;
+  opacity: 70%;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+
 nav .navbar-brand {
   font-family: var(--fuente-titulo);
 }
