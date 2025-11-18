@@ -48,23 +48,23 @@
     </nav>
 
     <!-- carrucel de noticias -->
-    <div class="container">
+    <!-- <div class="container">
         <div class="row ">
             <div class="col-12 mt-3">
                 <div id="carrucelNoticias" class="carousel slide">
 
                     <!-- botones carrucel -->
-                    <div class="carousel-indicators">
+    <!-- <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carrucelNoticias" data-bs-slide-to="0" class="active"
                             aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carrucelNoticias" data-bs-slide-to="1"
                             aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carrucelNoticias" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
-                    </div>
+                    </div> -->
 
-                    <!-- imagenes del carrucel y su contenido -->
-                    <div class="carousel-inner" style="max-height: 400px;">
+    <!-- imagenes del carrucel y su contenido -->
+    <!-- <div class="carousel-inner" style="max-height: 400px;">
                         <div class="carousel-item active">
                             <img src="/img/futbolista.avif" class="d-block w-100 rounded" alt="...">
                             <div class="carousel-caption d-block top-50 translate-middle-y">
@@ -72,10 +72,10 @@
                                 <p class="mb-0 h5  d-none d-md-block">El jugador dio su mejor rendimiento, pero aun así
                                     no logró levantar el partido. A pesar de la derrota, salió del campo con una
                                     sonrisa, acompañado por sus compañeros y orgulloso del esfuerzo del equipo.</p>
-                            </div>
+                            </div> -->
 
 
-                        </div>
+    <!-- </div>
                         <div class="carousel-item">
                             <img src="img/tenista.avif" class="d-block w-100 rounded" alt="...">
                             <div class="carousel-caption d-block top-50 translate-middle-y">
@@ -100,10 +100,10 @@
                                     durante todo el recorrido.</p>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <!-- botones -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carrucelNoticias"
+    <!-- botones -->
+    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carrucelNoticias"
                         data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Previous</span>
@@ -117,7 +117,137 @@
             </div>
 
         </div>
+    </div>  -->
+
+    <!-- carrucel de noticias -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12 mt-3">
+                <div id="carrucelNoticias" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carrucelNoticias" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carrucelNoticias" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carrucelNoticias" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner" style="max-height: 400px;">
+                        <div class="carousel-item active" data-bs-toggle="modal" data-bs-target="#modalNoticias">
+                            <img src="/img/futbolista.avif" class="d-block w-100 rounded" alt="...">
+                            <div class="carousel-caption d-block top-50 translate-middle-y">
+                                <h5 class="h1 text-uppercase">Torneo complicado para Antoni</h5>
+                                <p class="mb-0 h5 d-none d-md-block">
+                                    El jugador dio su mejor rendimiento, pero aun así no logró levantar el partido. A
+                                    pesar de la derrota, salió del campo con una sonrisa, acompañado por sus compañeros
+                                    y orgulloso del esfuerzo del equipo.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalNoticias">
+                            <img src="img/tenista.avif" class="d-block w-100 rounded" alt="...">
+                            <div class="carousel-caption d-block top-50 translate-middle-y">
+                                <h5 class="h1 text-uppercase">Isabela podría ser eliminada del torneo</h5>
+                                <p class="mb-0 d-none d-md-block">
+                                    Isabela, la destacada tenista del club Monteverde, podría quedar fuera del torneo
+                                    tras un control antidopaje preliminar. Las autoridades deportivas aún investigan el
+                                    caso, y la atleta asegura que todo se debe a un error en los suplementos que
+                                    consumió durante su preparación física.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item" data-bs-toggle="modal" data-bs-target="#modalNoticias">
+                            <img src="img/maraton.avif" class="d-block w-100 rounded" alt="...">
+                            <div class="carousel-caption d-block top-50 translate-middle-y">
+                                <h5 class="fs-4 text-uppercase">Jóvenes atletas conquistan la ciudad en una maratón</h5>
+                                <p class="mb-0 d-none d-md-block">
+                                    La maratón juvenil reunió a cientos de participantes que desbordaron entusiasmo
+                                    desde el primer kilómetro. Entre risas, esfuerzo y un fuerte espíritu competitivo,
+                                    los jóvenes recorrieron las principales calles de la ciudad, apoyados por familiares
+                                    y espectadores.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carrucelNoticias"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carrucelNoticias"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="modal fade" id="modalNoticias" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark h1">Detalle de la noticia</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body h4">
+                    Contenido de la noticia
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modalNoticias = document.getElementById('modalNoticias')
+        modalNoticias.addEventListener('show.bs.modal', function (event) {
+            const trigger = event.relatedTarget
+            const title = trigger.querySelector('.carousel-caption h5')
+            const text = trigger.querySelector('.carousel-caption p')
+
+            const modalTitle = modalNoticias.querySelector('.modal-title')
+            const modalBody = modalNoticias.querySelector('.modal-body')
+
+            modalTitle.textContent = title ? title.textContent : ''
+            modalBody.textContent = text ? text.textContent : ''
+        })
+    </script>
+
+
+    <!-- modal que se abre al hacer click en cualquier slide -->
+    <div class="modal fade" id="modalNoticias" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title text-dark h1">Torneo complicado para Antoni</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    Aquí puedes mostrar más información de la noticia, una imagen más grande o el texto completo del
+                    titular seleccionado.
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
 
     <main class="container flex-grow-1 mt-4">
