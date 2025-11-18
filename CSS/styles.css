@@ -56,6 +56,10 @@ nav ul li a:hover {
   color: white;
 }
 
+.hoverBlanco:hover {
+  color: white;
+}
+
 nav .navbar-brand {
   font-family: var(--fuente-titulo);
 }

@@ -23,23 +23,23 @@
 
             </button>
             <div class="collapse navbar-collapse fs-5" id="menu">
-                <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
-                    <li class="nav-item">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center  colorAmarillo ">
+                    <li class="nav-item hoverBlanco">
                         <a href="pages/equipos.html" class="nav-link text-reset">Equipos</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hoverBlanco">
                         <a href="pages/resultados.html" class="nav-link text-reset">Resultados</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hoverBlanco">
                         <a href="pages/clasificaciones.html" class="nav-link text-reset">Clasificaciones</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hoverBlanco">
                         <a href="pages/jugadores.html" class="nav-link text-reset">Jugadores</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hoverBlanco">
                         <a href="pages/arbitros.html" class="nav-link text-reset">Árbitros</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item hoverBlanco">
                         <a href="pages/contacto.html" class="nav-link text-reset">Contacto</a>
                     </li>
                 </ul>
@@ -49,82 +49,99 @@
 
 
     <main class="container flex-grow-1 mt-4">
-        <div class="row">
+        <div class="row align-items-stretch">
+
             <div class="col-12 col-md-4">
-                <div class="row row-cols-3">
+                <!-- columna de la izquierda -->
+                <div class="d-flex flex-column gap-3 h-100">
 
-                    <div class="col-12 ">
-                        <div class="card text-start fondoFuccia ">
+                    <div class="card text-start fondoFuccia">
+                        <div class="card-body">
+                            <h4 class="card-title">Noticia Top</h4>
+                            <p class="card-text colorAmarillo">Los Hombres de acero ganan el torneo!</p>
+                        </div>
+                    </div>
+
+                    <div class="card text-start flex-grow-1 d-flex">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Body</p>
+                        </div>
+                    </div>
+
+                    <a href="#" class="text-decoration-none ">
+                        <div class="card text-start bg-danger flex-grow-1">
                             <div class="card-body">
-                                <h4 class="card-title">Noticia Top</h4>
-                                <p class="card-text colorAmarillo">Los Hombres de acero ganan el torneo!</p>
+                                <h4 class="card-title">Ver en vivo</h4>
+                                <p class="card-text">Observa los partidos en linea!</p>
                             </div>
                         </div>
+                    </a>
 
-                    </div>
-
-                    <div class="col-12 mt-3">
-                        <div class="card text-start">
-                            <div class="card-body">
-                                <h4 class="card-title">Title</h4>
-                                <p class="card-text">Body</p>
-                            </div>
-                        </div>
-
-
-                    </div>
-
-
-
-                    <div class="col-12 mt-3">
-                        <a href="#">
-                            <div class="card text-start bg-danger">
-                                <div class="card-body ">
-                                    <h4 class="card-title">Ver en vivo</h4>
-                                    <p class="card-text">Observa los partidos en linea!</p>
-                                </div>
-                            </div>
-                        </a>
-
-                    </div>
                 </div>
             </div>
 
             <div class="col-12 col-md-4 mt-3 mt-md-0">
-                <div class="position-relative">
-                    <img class="rounded-3 img-fluid" src="public/img/deportes.png" alt="">
+                <div class="position-relative h-100">
+                    <img class="rounded-3 img-fluid" src="public/img/deportes.png" alt="imagen de deportistas">
                     <div class="position-absolute bottom-0 start-0 w-100 text-center mb-2">
-                        <a class="btn fondoMorado text-white f-oswald fs-6 mb-2" href="">Ver Todo</a>
+                        <a class="btn fondoMorado text-white f-oswald fs-6 mb-2" href="#">Ver Todo</a>
                     </div>
                 </div>
             </div>
 
-
-
             <div class="col-12 col-md-4 mt-3 mt-md-0">
-                <div class="row-cols-3">
-                    <div class="col-12">
-                        <div class="card text-start fondoAmarillo">
-                            <div class="card-body ">
-                                <h4 class="card-title colorMorado">esto pasa</h4>
-                                <p class="card-text">Body</p>
-                            </div>
-                        </div>
+                <div class="d-flex flex-column gap-3 h-100">
 
+                    <div class="card text-start fondoFuccia flex-grow-1 d-flex">
+                        <div class="card-body">
+                            <h4 class="card-title">Noticia Top</h4>
+                            <p class="card-text colorAmarillo">Los Hombres de acero ganan el torneo!</p>
+                        </div>
                     </div>
-                    <div class="col"></div>
-                    <div class="col"></div>
+
+                    <div class="card text-start flex-grow-1 d-flex">
+                        <div class="card-body">
+                            <h4 class="card-title">Title</h4>
+                            <p class="card-text">Body</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+    </main>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="position-relative d-inline-block mt-3">
+
+                    <img src=" /img/duelo3.png" class="img-fluid rounded" alt="">
+                    <div class="position-absolute top-50 start-50 translate-middle text-white fs-4 rounded text-center">
+                        <h3 class="h1 colorAmarillo">QUIERES COMPETIR?</h3>
+                        <a class="text-center btn btn-danger" href="">Inscribete Aqui</a>
+                    </div>
+
+
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
+
+
+
 
 
     <!-- FOOTER -->
     <div class="container-fluid">
         <footer class="row mt-3">
             <section class="col-12 col-md-6 text-center mt-3" aria-label="Redes Sociales">
-                <h5>Nuestras Redes</h5>
+                <h5 class="h4">Nuestras Redes</h5>
                 <nav>
                     <ul class="list-unstyled">
                         <li><a href="https://www.instagram.com/iesmaestre/?hl=es" target="_blank"
@@ -143,7 +160,7 @@
             <!-- Textos fundamentales -->
             <section class=" col-12 col-md-6 text-center mt-3" aria-label="Textos Legales">
 
-                <h5>Legales</h5>
+                <h5 class="h4">Legales</h5>
                 <nav>
                     <ul class="list-unstyled">
                         <li><a href="">Aviso Legal</a></li>
