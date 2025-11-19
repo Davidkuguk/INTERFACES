@@ -1,0 +1,58 @@
+{
+  "resultados": [
+    {
+      "competicion": "Liga Principal",
+      "jornada": 1,
+      "local": "Azules FC",
+      "visitante": "Titanes",
+      "golesLocal": 3,
+      "golesVisitante": 1,
+      "fecha": "2025-03-01"
+    },
+    {
+      "competicion": "Liga Principal",
+      "jornada": 1,
+      "local": "Leones",
+      "visitante": "Dragones",
+      "golesLocal": 2,
+      "golesVisitante": 2,
+      "fecha": "2025-03-01"
+    },
+    {
+      "competicion": "Liga Principal",
+      "jornada": 2,
+      "local": "Azules FC",
+      "visitante": "Leones",
+      "golesLocal": 1,
+      "golesVisitante": 0,
+      "fecha": "2025-03-08"
+    },
+    {
+      "competicion": "Copa Regional",
+      "jornada": 1,
+      "local": "Guerreros",
+      "visitante": "Naranja FC",
+      "golesLocal": 4,
+      "golesVisitante": 3,
+      "fecha": "2025-04-02"
+    },
+    {
+      "competicion": "Copa Regional",
+      "jornada": 2,
+      "local": "Halcones",
+      "visitante": "Tormenta",
+      "golesLocal": 2,
+      "golesVisitante": 2,
+      "fecha": "2025-04-09"
+    },
+    {
+      "competicion": "Torneo Juvenil",
+      "jornada": 1,
+      "local": "Estrellas Norte",
+      "visitante": "Academia Sur",
+      "golesLocal": 1,
+      "golesVisitante": 3,
+      "fecha": "2025-05-05"
+    }
+  ]
+}

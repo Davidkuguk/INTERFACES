@@ -48,6 +48,40 @@
     </nav>
 
     <main class="container-fluid flex-grow-1">
+        <div class="container my-4">
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <label for="filtroCompeticionClasificacion" class="form-label fw-bold">Competición</label>
+                    <select id="filtroCompeticionClasificacion" class="form-select">
+                        <option value="">Selecciona una competición</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-striped text-center align-middle">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col">Pos</th>
+                                    <th scope="col" class="text-start">Equipo</th>
+                                    <th scope="col">PJ</th>
+                                    <th scope="col">G</th>
+                                    <th scope="col">E</th>
+                                    <th scope="col">P</th>
+                                    <th scope="col">GF</th>
+                                    <th scope="col">GC</th>
+                                    <th scope="col">DG</th>
+                                    <th scope="col">PTS</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyClasificacion"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -93,7 +127,9 @@
     </div>
 
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/clasificaciones.js
+    "></script>
 
 </body>
 

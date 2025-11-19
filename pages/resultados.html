@@ -48,6 +48,43 @@
     </nav>
 
     <main class="container-fluid flex-grow-1">
+        <div class="container my-4">
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <label for="filtroCompeticionResultados" class="form-label fw-bold">Competición</label>
+                    <select id="filtroCompeticionResultados" class="form-select">
+                        <option value="">Todas las competiciones</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="filtroJornada" class="form-label fw-bold">Jornada</label>
+                    <select id="filtroJornada" class="form-select">
+                        <option value="">Todas las jornadas</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row mt-4 text-white">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-borderless text-center align-middle text-white f-oswald fs-5">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col" class="text-start">Local</th>
+                                    <th scope="col">Marcador</th>
+                                    <th scope="col" class="text-end">Visitante</th>
+                                    <th scope="col">Competición</th>
+                                    <th scope="col">Jornada</th>
+                                    <th scope="col">Fecha</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyResultados"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -93,7 +130,8 @@
     </div>
 
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/resultados.js"></script>
 
 </body>
 

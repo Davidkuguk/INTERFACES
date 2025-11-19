@@ -37,8 +37,16 @@ function mostrarEquipos(equipos) {
     enlace.className = 'text-decoration-none colorMorado'
 
     const cardCompeticion = document.createElement('p')
-    cardCompeticion.className = 'fw-bold f-oswald'
+    cardCompeticion.className = 'fw-bold f-oswald badge text-dark'
     cardCompeticion.textContent = equipo.competicion
+    
+       if(equipo.competicion === 'Liga Principal'){
+        cardCompeticion.className = 'fw-bold f-oswald badge fs-6 bg-danger'
+    }else if(equipo.competicion === 'Copa Regional'){
+        cardCompeticion.className = 'fw-bold f-oswald badge fs-6 bg-warning'
+    }else if(equipo.competicion === 'Torneo Juvenil'){
+        cardCompeticion.className = 'fw-bold f-oswald badge fs-6 bg-primary'
+    }
 
     enlace.addEventListener('click', e => {
       e.preventDefault()
