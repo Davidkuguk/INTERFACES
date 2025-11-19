@@ -48,6 +48,65 @@
     </nav>
 
     <main class="container-fluid flex-grow-1">
+        <div class="container my-5">
+            <div class="row g-3">
+                <div class="col-12">
+                    <label for="filtroCompeticion" class="form-label text-white">
+                        <h3>Filtrar por competición</h3>
+                    </label>
+                    <select id="filtroCompeticion" class="form-select">
+                        <option value="">Elige una competición</option>
+                        <option value="liga">Liga Principal</option>
+                        <option value="copa">Copa Regional</option>
+                        <option value="juvenil">Torneo Juvenil</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <div class="card fondoAmarillo">
+                        <div class="card-body">
+                            <h5 class="card-title colorMorado mb-3">Listado de equipos</h5>
+                            <p id="mensajeSinResultados" class="mb-2 text-muted">Selecciona una competición para ver los
+                                equipos.</p>
+                            <ul id="listaEquipos" class="list-group list-group-flush"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const equiposPorCompeticion = {
+                liga: ['Azules', 'Titanes', 'Leones', 'Dragones'],
+                copa: ['Guerreros', 'Naranja FC', 'Halcones', 'Tormenta'],
+                juvenil: ['Juveniles Norte', 'Estrellas Sub-18', 'Academia Sur', 'Cantera Este']
+            }
+
+            const filtroCompeticion = document.getElementById('filtroCompeticion')
+            const listaEquipos = document.getElementById('listaEquipos')
+            const mensajeSinResultados = document.getElementById('mensajeSinResultados')
+
+            function actualizarListaEquipos() {
+                const competicionSeleccionada = filtroCompeticion.value
+                listaEquipos.innerHTML = ''
+
+                if (!competicionSeleccionada || !equiposPorCompeticion[competicionSeleccionada]?.length) {
+                    mensajeSinResultados.style.display = 'block'
+                    return
+                }
+
+                mensajeSinResultados.style.display = 'none'
+
+                equiposPorCompeticion[competicionSeleccionada].forEach(equipo => {
+                    const li = document.createElement('li')
+                    li.className = 'list-group-item d-flex justify-content-between align-items-center'
+                    li.textContent = equipo
+                    listaEquipos.appendChild(li)
+                })
+            }
+
+            filtroCompeticion.addEventListener('change', actualizarListaEquipos)
+        </script>
 
     </main>
 
