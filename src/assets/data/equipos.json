@@ -1,7 +1,7 @@
 {
   "equipos": [
     {
-      "nombre": "Azules FC",
+      "nombre": "Fantasmas",
       "imagen": "/public/img/logos/fantasmas.avif",
       "competicion": "Liga Principal",
       "jugadores": [

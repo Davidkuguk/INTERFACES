@@ -49,13 +49,32 @@
 
     <main class="container flex-grow-1">
 
+
+        <div class="row">
+            <div class="col-12 col-md-4">
+                <label for="filtroCompeticion" class="form-label fw-bold">Filtrar por competición</label>
+                <select id="filtroCompeticion" class="form-select">
+                    <option value="">Todas las competiciones</option>
+                    <option value="Liga Principal">Liga Principal</option>
+                    <option value="Copa Regional">Copa Regional</option>
+                    <option value="Torneo Juvenil">Torneo Juvenil</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <div id="contenedorEquipos" class="row"></div>
+        </div>
+
+
         <div class="row" id="contenedorEquipos">
 
             <div class="modal fade" id="modalEquipo" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 id="modalEquipoNombre" class="modal-title"></h5>
+                            <h5 id="modalEquipoNombre" class="modal-title text-dark"></h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
                         <div class="modal-body">

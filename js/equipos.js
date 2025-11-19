@@ -5,10 +5,12 @@ fetch('/src/assets/data/equipos.json')
   .then(data => {
     equiposData = data.equipos
     mostrarEquipos(equiposData)
+    configurarFiltro()
   })
 
 function mostrarEquipos(equipos) {
   const contenedor = document.getElementById('contenedorEquipos')
+  contenedor.innerHTML = ''
 
   equipos.forEach((equipo, indice) => {
     const col = document.createElement('div')
@@ -54,6 +56,22 @@ function mostrarEquipos(equipos) {
     card.appendChild(cardBody)
     col.appendChild(card)
     contenedor.appendChild(col)
+  })
+}
+
+function configurarFiltro() {
+  const select = document.getElementById('filtroCompeticion')
+
+  select.addEventListener('change', () => {
+    const valor = select.value
+
+    if (!valor) {
+      mostrarEquipos(equiposData)
+      return
+    }
+
+    const filtrados = equiposData.filter(equipo => equipo.competicion === valor)
+    mostrarEquipos(filtrados)
   })
 }
 
