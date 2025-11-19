@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Columnas alineadas horizontalmente</title>
+    <title>Liga Deportiva</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 
@@ -47,66 +47,39 @@
         </div>
     </nav>
 
-    <main class="container-fluid flex-grow-1">
-        <div class="container my-5">
-            <div class="row g-3">
-                <div class="col-12">
-                    <label for="filtroCompeticion" class="form-label text-white">
-                        <h3>Filtrar por competición</h3>
-                    </label>
-                    <select id="filtroCompeticion" class="form-select">
-                        <option value="">Elige una competición</option>
-                        <option value="liga">Liga Principal</option>
-                        <option value="copa">Copa Regional</option>
-                        <option value="juvenil">Torneo Juvenil</option>
-                    </select>
-                </div>
+    <main class="container flex-grow-1">
 
-                <div class="col-12">
-                    <div class="card fondoAmarillo">
-                        <div class="card-body">
-                            <h5 class="card-title colorMorado mb-3">Listado de equipos</h5>
-                            <p id="mensajeSinResultados" class="mb-2 text-muted">Selecciona una competición para ver los
-                                equipos.</p>
-                            <ul id="listaEquipos" class="list-group list-group-flush"></ul>
+        <div class="row" id="contenedorEquipos">
+
+            <div class="modal fade" id="modalEquipo" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 id="modalEquipoNombre" class="modal-title"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="d-flex flex-column flex-md-row gap-3">
+                                <div class="text-center">
+                                    <img id="modalEquipoImagen" src="" alt=""
+                                        style="max-width: 150px; max-height: 150px; object-fit: contain;">
+                                    <p id="modalEquipoCompeticion" class="mt-2 mb-0 fw-semibold"></p>
+                                </div>
+                                <div class="flex-grow-1">
+                                    <p id="modalEquipoCapitan" class="mb-2"></p>
+                                    <h6 class="fw-bold">Plantilla</h6>
+                                    <ul id="modalEquipoJugadores" class="list-group list-group-flush"></ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
-        <script>
-            const equiposPorCompeticion = {
-                liga: ['Azules', 'Titanes', 'Leones', 'Dragones'],
-                copa: ['Guerreros', 'Naranja FC', 'Halcones', 'Tormenta'],
-                juvenil: ['Juveniles Norte', 'Estrellas Sub-18', 'Academia Sur', 'Cantera Este']
-            }
-
-            const filtroCompeticion = document.getElementById('filtroCompeticion')
-            const listaEquipos = document.getElementById('listaEquipos')
-            const mensajeSinResultados = document.getElementById('mensajeSinResultados')
-
-            function actualizarListaEquipos() {
-                const competicionSeleccionada = filtroCompeticion.value
-                listaEquipos.innerHTML = ''
-
-                if (!competicionSeleccionada || !equiposPorCompeticion[competicionSeleccionada]?.length) {
-                    mensajeSinResultados.style.display = 'block'
-                    return
-                }
-
-                mensajeSinResultados.style.display = 'none'
-
-                equiposPorCompeticion[competicionSeleccionada].forEach(equipo => {
-                    const li = document.createElement('li')
-                    li.className = 'list-group-item d-flex justify-content-between align-items-center'
-                    li.textContent = equipo
-                    listaEquipos.appendChild(li)
-                })
-            }
-
-            filtroCompeticion.addEventListener('change', actualizarListaEquipos)
-        </script>
 
     </main>
 
@@ -152,7 +125,8 @@
     </div>
 
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/equipos.js"></script>
 
 </body>
 

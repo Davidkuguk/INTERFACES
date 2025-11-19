@@ -1,0 +1,154 @@
+{
+  "equipos": [
+    {
+      "nombre": "Azules FC",
+      "imagen": "/public/img/logos/fantasmas.avif",
+      "competicion": "Liga Principal",
+      "jugadores": [
+        { "nombre": "Carlos Medina", "apodo": "El Muro", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Javier Ramos", "apodo": "Rayo", "numero": 7, "posicion": "Delantero" },
+        { "nombre": "Luis Arroyo", "apodo": "Pulpo", "numero": 5, "posicion": "Defensa" },
+        { "nombre": "Mateo Pastor", "apodo": "Maestro", "numero": 10, "posicion": "Mediocentro" },
+        { "nombre": "Samuel Flores", "apodo": "Motor", "numero": 8, "posicion": "Mediocentro" },
+        { "nombre": "Álex Vergara", "apodo": "Trueno", "numero": 3, "posicion": "Defensa" },
+        { "nombre": "Pedro Ríos", "apodo": "Tornado", "numero": 11, "posicion": "Extremo" },
+        { "nombre": "Óscar Navas", "apodo": "Seguro", "numero": 13, "posicion": "Portero" }
+      ]
+    },
+    {
+      "nombre": "Titanes",
+      "imagen": "/public/img/logos/titanes.avif",
+      "competicion": "Liga Principal",
+      "jugadores": [
+        { "nombre": "Diego Navarro", "apodo": "Tornado", "numero": 9, "posicion": "Delantero" },
+        { "nombre": "Samuel Ortiz", "apodo": "Martillo", "numero": 4, "posicion": "Defensa" },
+        { "nombre": "Álvaro Gómez", "apodo": "Lince", "numero": 8, "posicion": "Mediocampista" },
+        { "nombre": "Marco Silva", "apodo": "Muralla", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Oliver Puente", "apodo": "Rugido", "numero": 6, "posicion": "Mediocentro" },
+        { "nombre": "Rubén del Valle", "apodo": "Faro", "numero": 2, "posicion": "Defensa" },
+        { "nombre": "Ismael Torres", "apodo": "Granito", "numero": 5, "posicion": "Defensa" },
+        { "nombre": "Cristian Mesa", "apodo": "Vértigo", "numero": 14, "posicion": "Extremo" }
+      ]
+    },
+    {
+      "nombre": "Leones",
+      "imagen": "/public/img/logos/leones.avif",
+      "competicion": "Liga Principal",
+      "jugadores": [
+        { "nombre": "Esteban Cruz", "apodo": "Fiera", "numero": 11, "posicion": "Extremo" },
+        { "nombre": "Pablo Duarte", "apodo": "Centurión", "numero": 2, "posicion": "Defensa" },
+        { "nombre": "Héctor Molina", "apodo": "Sol", "numero": 6, "posicion": "Mediocentro" },
+        { "nombre": "Tomás Rivas", "apodo": "Águila", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Julián Herrera", "apodo": "Rex", "numero": 3, "posicion": "Defensa" },
+        { "nombre": "Nicolás Vera", "apodo": "Puma", "numero": 9, "posicion": "Delantero" },
+        { "nombre": "Daniel Castaño", "apodo": "Eco", "numero": 10, "posicion": "Mediapunta" },
+        { "nombre": "Borja Luna", "apodo": "Relámpago", "numero": 7, "posicion": "Extremo" }
+      ]
+    },
+    {
+      "nombre": "Dragones",
+      "imagen": "/public/img/logos/dragones.avif",
+      "competicion": "Copa Regional",
+      "jugadores": [
+        { "nombre": "Mario Serrano", "apodo": "Fuego", "numero": 7, "posicion": "Delantero" },
+        { "nombre": "Iván Herrera", "apodo": "Roca", "numero": 3, "posicion": "Defensa" },
+        { "nombre": "Cristian Vega", "apodo": "Cobra", "numero": 5, "posicion": "Mediocampista" },
+        { "nombre": "Fernando López", "apodo": "Sombra", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Adrián Gil", "apodo": "Tritón", "numero": 12, "posicion": "Delantero" },
+        { "nombre": "Hugo Zamora", "apodo": "Ala", "numero": 6, "posicion": "Extremo" },
+        { "nombre": "Lucas Bravo", "apodo": "Garra", "numero": 4, "posicion": "Defensa" },
+        { "nombre": "Kevin Torres", "apodo": "Centella", "numero": 17, "posicion": "Mediocentro" }
+      ]
+    },
+    {
+      "nombre": "Guerreros",
+      "imagen": "/public/img/logos/guerreros.avif",
+      "competicion": "Copa Regional",
+      "jugadores": [
+        { "nombre": "Santiago Flores", "apodo": "Tanque", "numero": 9, "posicion": "Delantero" },
+        { "nombre": "Adrián Paredes", "apodo": "Tormenta", "numero": 4, "posicion": "Defensa" },
+        { "nombre": "Hugo Beltrán", "apodo": "Chispa", "numero": 8, "posicion": "Mediocentro" },
+        { "nombre": "Andrés Rojas", "apodo": "Acero", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Gonzalo Barrios", "apodo": "Huracán", "numero": 11, "posicion": "Extremo" },
+        { "nombre": "Álex Carranza", "apodo": "León", "numero": 2, "posicion": "Defensa" },
+        { "nombre": "David Porto", "apodo": "Eco", "numero": 10, "posicion": "Mediapunta" },
+        { "nombre": "Joan Rivas", "apodo": "Rastro", "numero": 14, "posicion": "Delantero" }
+      ]
+    },
+    {
+      "nombre": "Naranja FC",
+      "imagen": "/public/img/logos/naranja.avif",
+      "competicion": "Copa Regional",
+      "jugadores": [
+        { "nombre": "Raúl Márquez", "apodo": "Giro", "numero": 10, "posicion": "Delantero" },
+        { "nombre": "Carlos Iván", "apodo": "Murmullo", "numero": 6, "posicion": "Mediocentro" },
+        { "nombre": "Sergio Lara", "apodo": "Pared", "numero": 2, "posicion": "Defensa" },
+        { "nombre": "Joaquín Reyes", "apodo": "Nube", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Víctor Gómez", "apodo": "Río", "numero": 12, "posicion": "Mediocampista" },
+        { "nombre": "Álvaro Santos", "apodo": "Viento", "numero": 9, "posicion": "Delantero" },
+        { "nombre": "Enzo Godoy", "apodo": "Paso", "numero": 4, "posicion": "Defensa" },
+        { "nombre": "Bruno Meza", "apodo": "Sol", "numero": 14, "posicion": "Extremo" }
+      ]
+    },
+    {
+      "nombre": "Halcones",
+      "imagen": "/public/img/logos/halcones.avif",
+      "competicion": "Torneo Juvenil",
+      "jugadores": [
+        { "nombre": "Alex Montoya", "apodo": "Rápido", "numero": 11, "posicion": "Extremo" },
+        { "nombre": "Daniel Correa", "apodo": "Garra", "numero": 5, "posicion": "Defensa" },
+        { "nombre": "Luis Palma", "apodo": "Pico", "numero": 7, "posicion": "Delantero" },
+        { "nombre": "Rafael Castaño", "apodo": "Seguro", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Nico Aranda", "apodo": "Sigilo", "numero": 6, "posicion": "Mediocentro" },
+        { "nombre": "Santi Oliva", "apodo": "Flecha", "numero": 3, "posicion": "Defensa" },
+        { "nombre": "Mario Román", "apodo": "Vértigo", "numero": 10, "posicion": "Delantero" },
+        { "nombre": "Leo Barrios", "apodo": "Norte", "numero": 14, "posicion": "Extremo" }
+      ]
+    },
+    {
+      "nombre": "Tormenta",
+      "imagen": "/public/img/logos/tormenta.avif",
+      "competicion": "Torneo Juvenil",
+      "jugadores": [
+        { "nombre": "Julián Viera", "apodo": "Chispa", "numero": 8, "posicion": "Mediocampista" },
+        { "nombre": "Omar Salas", "apodo": "Muralla", "numero": 4, "posicion": "Defensa" },
+        { "nombre": "Bruno Mena", "apodo": "Ráfaga", "numero": 10, "posicion": "Delantero" },
+        { "nombre": "Felipe Santos", "apodo": "Torre", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Rodrigo Nieves", "apodo": "Eco", "numero": 6, "posicion": "Mediocentro" },
+        { "nombre": "Germán Torres", "apodo": "Pulso", "numero": 7, "posicion": "Extremo" },
+        { "nombre": "Erik Bolaños", "apodo": "Voz", "numero": 5, "posicion": "Defensa" },
+        { "nombre": "Max Duarte", "apodo": "Alma", "numero": 14, "posicion": "Delantero" }
+      ]
+    },
+    {
+      "nombre": "Estrellas Norte",
+      "imagen": "/public/img/logos/estrellas.avif",
+      "competicion": "Torneo Juvenil",
+      "jugadores": [
+        { "nombre": "Ian Delgado", "apodo": "Cometa", "numero": 9, "posicion": "Delantero" },
+        { "nombre": "Marcos Villa", "apodo": "Escudo", "numero": 5, "posicion": "Defensa" },
+        { "nombre": "Joel Santana", "apodo": "Brillo", "numero": 6, "posicion": "Mediocentro" },
+        { "nombre": "Emilio Torres", "apodo": "Murciélago", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Gonzalo Peña", "apodo": "Eco", "numero": 12, "posicion": "Mediocentro" },
+        { "nombre": "Diego Ríos", "apodo": "Foco", "numero": 3, "posicion": "Defensa" },
+        { "nombre": "Álvaro Leiva", "apodo": "Ala", "numero": 11, "posicion": "Extremo" },
+        { "nombre": "Tomás Ulloa", "apodo": "Pasos", "numero": 14, "posicion": "Delantero" }
+      ]
+    },
+    {
+      "nombre": "Academia Sur",
+      "imagen": "/public/img/logos/academia.avif",
+      "competicion": "Torneo Juvenil",
+      "jugadores": [
+        { "nombre": "Renato Díaz", "apodo": "Centella", "numero": 7, "posicion": "Delantero" },
+        { "nombre": "Thiago Peña", "apodo": "Roble", "numero": 3, "posicion": "Defensa" },
+        { "nombre": "Gabriel León", "apodo": "Eco", "numero": 8, "posicion": "Mediocentro" },
+        { "nombre": "Eduardo Canto", "apodo": "Reflejo", "numero": 1, "posicion": "Portero" },
+        { "nombre": "Jairo Molina", "apodo": "Brisa", "numero": 10, "posicion": "Mediapunta" },
+        { "nombre": "Nicolás Céspedes", "apodo": "Rama", "numero": 5, "posicion": "Defensa" },
+        { "nombre": "Antonio Vela", "apodo": "Vela", "numero": 11, "posicion": "Extremo" },
+        { "nombre": "Rubén Ávila", "apodo": "Surco", "numero": 14, "posicion": "Delantero" }
+      ]
+    }
+  ]
+}
