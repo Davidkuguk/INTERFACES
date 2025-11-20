@@ -48,6 +48,139 @@
     </nav>
 
     <main class="container-fluid flex-grow-1">
+        <main class="container my-5">
+            <div class="row mb-4">
+                <div class="col-12 col-md-8">
+                    <h2 class="f-oswald colorAmarillo">Contacto</h2>
+                    <p class="text-white-50 mb-1">Si tienes dudas sobre la liga, inscripciones, horarios o resultados,
+                        puedes contactar con la administración a través del siguiente formulario.</p>
+                    <p class="text-white-50 mb-0">Correo de la competición: <span
+                            class="fw-bold">liga@competiciondeportiva.com</span></p>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-lg-6">
+                    <h3 class="fs-4 f-oswald colorAmarillo mb-3">Preguntas frecuentes</h3>
+
+                    <div class="accordion" id="faqContacto">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1Heading">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                    ¿Cómo puedo inscribir un nuevo equipo en la liga?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading"
+                                data-bs-parent="#faqContacto">
+                                <div class="accordion-body">
+                                    La inscripción de equipos se realiza al inicio de cada temporada. Debes enviar los
+                                    datos del club, plantilla provisional y persona de contacto al correo oficial de la
+                                    competición. Recibirás respuesta con los pasos y plazos específicos.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                    ¿Dónde se publican horarios y cambios de jornada?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading"
+                                data-bs-parent="#faqContacto">
+                                <div class="accordion-body">
+                                    Los horarios oficiales y posibles cambios se publican siempre en la sección de
+                                    Calendario y se notifican por correo a las personas responsables de cada equipo.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                    ¿Cómo presento una reclamación o incidencia de partido?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading"
+                                data-bs-parent="#faqContacto">
+                                <div class="accordion-body">
+                                    Las reclamaciones deben hacerse por escrito en un plazo máximo de 24 horas tras la
+                                    finalización del encuentro. Puedes usar este formulario seleccionando el motivo
+                                    “Reclamación/Incidencia” e indicando el partido y una descripción detallada.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4Heading">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                    ¿Puedo solicitar estadísticas o informes personalizados?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Heading"
+                                data-bs-parent="#faqContacto">
+                                <div class="accordion-body">
+                                    Sí, puedes solicitar informes de jugadores, equipos o competiciones. Selecciona el
+                                    motivo “Consulta estadística” en el formulario e indica qué datos necesitas.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <h3 class="fs-4 f-oswald colorAmarillo mb-3">Envíanos tu consulta</h3>
+
+                    <form id="formContacto" action="mailto:liga@competiciondeportiva.com" method="post"
+                        enctype="text/plain">
+                        <div class="mb-3">
+                            <label for="nombreContacto" class="form-label text-white">Nombre</label>
+                            <input type="text" class="form-control" id="nombreContacto" name="nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="emailContacto" class="form-label text-white">Correo electrónico</label>
+                            <input type="email" class="form-control" id="emailContacto" name="email" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="competicionContacto" class="form-label text-white">Competición</label>
+                            <select id="competicionContacto" name="competicion" class="form-select">
+                                <option value="">General</option>
+                                <option value="Liga Principal">Liga Principal</option>
+                                <option value="Copa Regional">Copa Regional</option>
+                                <option value="Torneo Juvenil">Torneo Juvenil</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="motivoContacto" class="form-label text-white">Motivo</label>
+                            <select id="motivoContacto" name="motivo" class="form-select" required>
+                                <option value="">Selecciona un motivo</option>
+                                <option value="Informacion general">Información general</option>
+                                <option value="Inscripcion equipos">Inscripción de equipos</option>
+                                <option value="Reclamacion o incidencia">Reclamación/Incidencia</option>
+                                <option value="Consulta estadistica">Consulta estadística</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensajeContacto" class="form-label text-white">Mensaje</label>
+                            <textarea class="form-control" id="mensajeContacto" name="mensaje" rows="4"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn fondoMorado btnHover text-white f-oswald px-4">Enviar
+                            mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </main>
 
     </main>
 
@@ -93,7 +226,7 @@
     </div>
 
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
 
 </body>
 

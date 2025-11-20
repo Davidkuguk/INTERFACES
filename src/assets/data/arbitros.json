@@ -1,0 +1,43 @@
+{
+  "arbitros": [
+    {
+      "nombre": "Laura Sánchez",
+      "apodo": "La Líder",
+      "pais": "España",
+      "categoria": "Principal",
+      "competicion": "Liga Principal",
+      "imagen": "/img/arbitros/laura-sanchez.png",
+      "estadisticas": {
+        "Partidos arbitrados": 25,
+        "Tarjetas amarillas": 82,
+        "Tarjetas rojas": 5,
+        "Penaltis señalados": 9
+      }
+    },
+    {
+      "nombre": "Marco Hernández",
+      "apodo": "El Silbato",
+      "pais": "España",
+      "categoria": "Asistente",
+      "competicion": "Liga Principal",
+      "imagen": "/img/arbitros/marco-hernandez.png",
+      "estadisticas": {
+        "Partidos arbitrados": 30,
+        "Fuera de juego señalados": 64
+      }
+    },
+    {
+      "nombre": "Ana Torres",
+      "apodo": "Justicia",
+      "pais": "España",
+      "categoria": "Principal",
+      "competicion": "Copa Regional",
+      "imagen": "/img/arbitros/ana-torres.png",
+      "estadisticas": {
+        "Partidos arbitrados": 18,
+        "Tarjetas amarillas": 51,
+        "Tarjetas rojas": 3
+      }
+    }
+  ]
+}

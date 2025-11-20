@@ -48,6 +48,74 @@
     </nav>
 
     <main class="container-fluid flex-grow-1">
+        <div class="container my-4">
+            <h2 class="mb-4  text-white">Jugadores</h2>
+
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <label for="filtroCompeticionJugadores" class="form-label fw-bold text-white">Competición</label>
+                    <select id="filtroCompeticionJugadores" class="form-select">
+                        <option value="">Todas las competiciones</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="busquedaJugador" class="form-label fw-bold text-white">Buscar jugador</label>
+                    <input id="busquedaJugador" type="text" class="form-control"
+                        placeholder="Nombre, apodo, posicion o equipo">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-borderless text-center align-middle bg-white rounded-3">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col" class="text-start">Jugador</th>
+                                    <th scope="col">Apodo</th>
+                                    <th scope="col">Nº</th>
+                                    <th scope="col">Posición</th>
+                                    <th scope="col">Equipo</th>
+                                    <th scope="col">Competición</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyJugadores" class="f-oswald fs-6"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalJugador" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 id="modalJugadorNombre" class="modal-title text-dark"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column flex-md-row gap-3">
+                            <div class="text-center">
+                                <img id="modalJugadorEscudo" src="" alt=""
+                                    style="max-width: 120px; max-height: 120px; object-fit: contain;">
+                                <p id="modalJugadorEquipo" class="mt-2 mb-0 fw-semibold"></p>
+                                <p id="modalJugadorCompeticion" class="mb-0 text-muted"></p>
+                            </div>
+                            <div class="flex-grow-1">
+                                <p id="modalJugadorApodo" class="mb-1"></p>
+                                <p id="modalJugadorNumero" class="mb-1"></p>
+                                <p id="modalJugadorPosicion" class="mb-3"></p>
+                                <h6 class="fw-bold">Estadísticas</h6>
+                                <ul id="modalJugadorStats" class="list-group list-group-flush"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -93,7 +161,8 @@
     </div>
 
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jugadores.js"></script>
 
 </body>
 

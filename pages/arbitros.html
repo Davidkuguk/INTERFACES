@@ -48,6 +48,72 @@
     </nav>
 
     <main class="container-fluid flex-grow-1">
+        <div class="container my-4">
+            <h2 class="mb-4 f-oswald text-white">Árbitros</h2>
+
+            <div class="row g-3">
+                <div class="col-12 col-md-4">
+                    <label for="filtroCompeticionArbitros" class="form-label fw-bold text-white">Competición</label>
+                    <select id="filtroCompeticionArbitros" class="form-select">
+                        <option value="">Todas las competiciones</option>
+                    </select>
+                </div>
+                <div class="col-12 col-md-4">
+                    <label for="busquedaArbitro" class="form-label fw-bold text-white">Buscar árbitro</label>
+                    <input id="busquedaArbitro" type="text" class="form-control"
+                        placeholder="Nombre, apodo, país o categoría">
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-12">
+                    <div class="table-responsive">
+                        <table class="table table-borderless text-center align-middle bg-white rounded-3">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th scope="col" class="text-start">Nombre</th>
+                                    <th scope="col">Apodo</th>
+                                    <th scope="col">País</th>
+                                    <th scope="col">Categoría</th>
+                                    <th scope="col">Competición</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyArbitros"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="modalArbitro" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 id="modalArbitroNombre" class="modal-title"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="d-flex flex-column flex-md-row gap-3">
+                            <div class="text-center">
+                                <img id="modalArbitroImagen" src="" alt=""
+                                    style="max-width: 120px; max-height: 120px; object-fit: contain;">
+                                <p id="modalArbitroCategoria" class="mt-2 mb-0 fw-semibold"></p>
+                                <p id="modalArbitroCompeticion" class="mb-0 text-muted"></p>
+                            </div>
+                            <div class="flex-grow-1">
+                                <p id="modalArbitroApodo" class="mb-1"></p>
+                                <p id="modalArbitroPais" class="mb-3"></p>
+                                <h6 class="fw-bold">Estadísticas</h6>
+                                <ul id="modalArbitroStats" class="list-group list-group-flush"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </main>
 
@@ -93,7 +159,8 @@
     </div>
 
 
-    <script src="js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/arbitros.js"></script>
 
 </body>
 

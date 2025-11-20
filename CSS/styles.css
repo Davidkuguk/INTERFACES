@@ -39,6 +39,10 @@ p {
   font-family: var(--fuente-secundaria);
 }
 
+.f-titulo {
+  font-family: var(--fuente-titulo);
+}
+
 nav,
 footer {
   background: var(--color-morado);
@@ -68,7 +72,6 @@ nav ul li a:hover {
   background: var(--color-secundario);
   color: var(--color-morado) !important;
   transition: 1s;
-  opacity: 70%;
   -webkit-transition: 1s;
   -moz-transition: 1s;
   -ms-transition: 1s;
